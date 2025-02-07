@@ -13,6 +13,41 @@
 
 <body>
 
+
+    <header>
+        <div class="logo"></div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <nav class="mobile-nav ">
+        <ul>
+            <li class="active  ">
+                <a href="/home-1"><span><i style="font-size: 25px;"
+                            class="fa-light fa-user"></i></span>About</a>
+            </li>
+            <li class="false  ">
+                <a href="/resume"><span><i style="font-size: 25px;"
+                            class="fa-light fa-file-lines"></i></span>Resume</a>
+            </li>
+            <li class="false  ">
+                <a href="/portfolio"><span><i style="font-size: 25px;"
+                            class="fa-light fa-briefcase"></i></span>Works</a>
+            </li>
+            <li class="false  ">
+                <a href="/blog"><span><i style="font-size: 25px;"
+                            class="fa-brands fa-blogger"></i></span>Blogs</a>
+            </li>
+            <li class="false  "><a href="/contact"><span><i style="font-size: 25px;"
+                            class="size-22 fa-light fa-address-book"></i></span>Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+
     <div class="main">
         <div class="container">
             <div class="row">
@@ -100,7 +135,7 @@
                                     <div class="col-xxl-6 col-xl-6 col-lg-6">
                                         <div class="what-do-item bg-prink ">
                                             <div class="icon" style="margin: 0px auto;">
-                                                <img alt="feature"  height="40" src="img/design.svg">
+                                                <img alt="feature" height="40" src="img/design.svg">
                                             </div>
                                             <div class="text">
                                                 <h4 class="title">Ui/Ux Design</h4>
@@ -112,7 +147,7 @@
                                     <div class="col-xxl-6 col-xl-6 col-lg-6">
                                         <div class="what-do-item bg-catkrill ">
                                             <div class="icon" style="margin: 0px auto;">
-                                                <img alt="feature"  height="40"  src="img/app-development.svg">
+                                                <img alt="feature" height="40" src="img/app-development.svg">
                                             </div>
                                             <div class="text">
                                                 <h4 class="title">App Development</h4>
@@ -124,7 +159,7 @@
                                     <div class="col-xxl-6 col-xl-6 col-lg-6">
                                         <div class="what-do-item bg-catkrill ">
                                             <div class="icon" style="margin: 0px auto;">
-                                                <img alt="feature"  height="40"  src="img/photograph.svg">
+                                                <img alt="feature" height="40" src="img/photograph.svg">
                                             </div>
                                             <div class="text">
                                                 <h4 class="title">Photography</h4>
@@ -136,7 +171,7 @@
                                     <div class="col-xxl-6 col-xl-6 col-lg-6">
                                         <div class="what-do-item bg-prink ">
                                             <div class="icon" style="margin: 0px auto;">
-                                                <img alt="feature"  height="40"  src="img/webdev.svg">
+                                                <img alt="feature" height="40" src="img/webdev.svg">
                                             </div>
                                             <div class="text">
                                                 <h4 class="title">Web Development</h4>
@@ -150,7 +185,8 @@
 
                         </div>
 
-                        <div class="footer-copyright text-center"><span>© 2025 All Rights Reserved by elite-themes24.</span></div>
+                        <div class="footer-copyright text-center"><span>© 2025 All Rights Reserved by
+                                elite-themes24.</span></div>
 
 
                     </div>
@@ -160,18 +196,23 @@
                         <nav class="main-menu-inner">
                             <ul>
                                 <li class="active  ">
-                                    <a href="/home-1"><span><i style="font-size: 25px;" class="fa-light fa-user"></i></span>About</a>
+                                    <a href="/home-1"><span><i style="font-size: 25px;"
+                                                class="fa-light fa-user"></i></span>About</a>
                                 </li>
                                 <li class="false  ">
-                                    <a href="/resume"><span><i style="font-size: 25px;" class="fa-light fa-file-lines"></i></span>Resume</a>
+                                    <a href="/resume"><span><i style="font-size: 25px;"
+                                                class="fa-light fa-file-lines"></i></span>Resume</a>
                                 </li>
                                 <li class="false  ">
-                                    <a href="/portfolio"><span><i style="font-size: 25px;" class="fa-light fa-briefcase"></i></span>Works</a>
+                                    <a href="/portfolio"><span><i style="font-size: 25px;"
+                                                class="fa-light fa-briefcase"></i></span>Works</a>
                                 </li>
                                 <li class="false  ">
-                                    <a href="/blog"><span><i style="font-size: 25px;" class="fa-brands fa-blogger"></i></span>Blogs</a>
+                                    <a href="/blog"><span><i style="font-size: 25px;"
+                                                class="fa-brands fa-blogger"></i></span>Blogs</a>
                                 </li>
-                                <li class="false  "><a href="/contact"><span><i style="font-size: 25px;" class="size-22 fa-light fa-address-book"></i></span>Contact</a>
+                                <li class="false  "><a href="/contact"><span><i style="font-size: 25px;"
+                                                class="size-22 fa-light fa-address-book"></i></span>Contact</a>
                                 </li>
                             </ul>
                         </nav>
@@ -184,7 +225,17 @@
 
 
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const mobileMenu = document.getElementById("mobile-menu");
+    const nav = document.querySelector(".mobile-nav");
 
+    mobileMenu.addEventListener("click", function () {
+        nav.classList.toggle("active");
+        mobileMenu.classList.toggle("active");
+    });
+});
+</script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
