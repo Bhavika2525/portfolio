@@ -156,7 +156,9 @@ body {
     /* text-transform: capitalize; */
     margin-bottom: 0;
 }
-
+.personal-info-contact-item .text p a {
+    color: #fff;
+}
 
 .personal-info-btn {
     text-align: center;
@@ -192,7 +194,7 @@ body {
 
 
 .detail-inner {
-    padding: 60px 60px 0 60px;
+    padding: 60px 60px 60px 60px;
 }
 
 .main-title {
@@ -316,19 +318,8 @@ body {
 }
 
 
-
-
-
-/* Mobile */
-
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background: #222;
-    color: #fff;
+.mobile-menu-sec {
+    display: none
 }
 
 .logo {
@@ -336,7 +327,7 @@ header {
     font-weight: bold;
 }
 
-/* Hamburger Menu */
+
 .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -352,9 +343,163 @@ header {
     transition: 0.4s;
 }
 
+
+
+.resume-sec {
+    background-color: #000;
+    border-radius: 20px;
+    min-height: 400px;
+}
+
+.resume-inner {
+    padding: 60px 60px 60px 60px;
+}
+
+.education-box {
+    border: 1px solid #353535;
+    border-radius: 12px;
+    padding: 25px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.education-subtitle {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 9px;
+    color: var(--textcolor);
+}
+
+.education-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--heading-black);
+    margin-bottom: 4px;
+    color: #fff;
+}
+
+.education-text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: var(--textcolor);
+}
+
+.edu-sec-title {
+    margin-bottom: 20px;
+}
+
+.edu-sec-title h2 {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 26px;
+    color: #fff;
+}
+
+.edu-sec-title img {
+    margin-right: 6px;
+    margin-top: -5px;
+}
+
+.skill-sec {
+    padding: 60px 60px 60px 60px;
+    background-color: #0d0d0d;
+}
+
+.skill-title {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.skill-bar-item {
+    margin-bottom: 30px;
+}
+
+.title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.title-inner {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--textcolor);
+    margin-bottom: 0;
+}
+
+.count-line {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--textcolor);
+}
+
+.progress-bar {
+    height: 6px;
+    background: #edf2f2;
+    border-radius: 6px;
+    overflow: inherit;
+}
+
+.progress-line {
+    height: 100%;
+    border-radius: inherit;
+}
+
+.progress-color-1 {
+    background-color: #ff6464;
+}
+
+.progress-color-2 {
+    background-color: #9272d4;
+}
+
+.progress-color-3 {
+    background-color: #5185d4;
+}
+
+.progress-color-4 {
+    background-color: #ca56f2;
+}
+
+.knowledege-item {
+
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    background: #edf2f2;
+    background-color: rgb(237, 242, 242);
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background-color: #1c1c1c;
+    color: var(--textcolor);
+}
+
 @media only screen and (min-width:375px)and (max-width:767px) {
 
     /* Mobile Navigation */
+
+
+    .mobile-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background: #222;
+        color: #fff;
+    }
+    .mobile-menu-sec {
+        display: block;
+      }
+
     .mobile-nav {
         position: fixed;
         top: 0;
@@ -420,7 +565,10 @@ header {
         padding: 40px 30px 0 30px;
         margin-top: 20px;
     }
-
+    .resume-inner {
+        padding: 60px 60px 60px 60px;
+        margin: 10px 0;
+      }
 
     .main-title::after {
         width: 100px;
