@@ -46,7 +46,7 @@ body {
 
 .info-sec .personal-info img {
     width: 100%;
-    height: auto;
+    height: 270px;
     padding: 10px;
     object-fit: cover;
     object-position: top;
